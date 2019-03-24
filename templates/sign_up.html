@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style_template.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/footer.css') }}">
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-blue w3-border-right w3-animate-left"
+  style="display:none;z-index:5"
+  id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">close &times;</button>
+  <h3 class="w3-bar-item">menu</h3>
+  <a href="{{ url_for('about') }}" class="w3-bar-item w3-button">About</a>
+  <a href="lesson_1.html" class="w3-bar-item w3-button">Lesson 1</a>
+  <a href="lesson_2.html" class="w3-bar-item w3-button">Lesson 2</a>
+  <a href="lesson_3.html" class="w3-bar-item w3-button">Lesson 3</a>
+  <a href="lesson_4.html" class="w3-bar-item w3-button">Lesson 4</a>
+  <a href="sign_up.html" class="w3-bar-item w3-button">Sign Up</a>
+  </div>
+</div>
+</div>
+
+<!-- Page Content -->
+
+<div class = "w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+</div>
+
+<div class="header">
+  <button class="w3-button w3-xxlarge" onclick="w3_open()">&#9776; </button>
+  <div class="w3-container  w3-xlarge">
+    <br><br><br>
+    <h2>Sign up to our mailing list for spanish updates</h2>
+<br>
+    <form action="/successful" method="POST">
+      <input type="text" placeholder="email" required>
+      <button type="submit" required>Submit</button>
+<br><br><br>
+  </div>
+</div>
+
+                                                </div>
+                                              </div>
+                                            </div>
+
+
+
+                                      <!--footer-->
+
+                                      <div class="footer">
+                                        <a href="https://www.instagram.com/#learnspanish" class="fa fa-instagram"></a>
+                                        <a href="https://www.pinterest.co.uk/search/pins/?rs=ac&len=2&q=learn%20spanish&eq=learn%20spanish&etslf=5089&term_meta" class="fa fa-pinterest"></a>
+
+                                        </form>
+                                      </div>
+
+
+                                      <!--javascript-->
+
+                                      <script>
+                                      function w3_open() {
+                                        document.getElementById("mySidebar").style.display = "block";
+                                        document.getElementById("myOverlay").style.display = "block";
+                                      }
+                                      function w3_close() {
+                                        document.getElementById("mySidebar").style.display = "none";
+                                        document.getElementById("myOverlay").style.display = "none";
+                                      }
+                                      </script>
+
+
+                                    </body>
+                                    </html>

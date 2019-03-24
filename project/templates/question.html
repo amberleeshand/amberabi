@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <link rel='stylesheet' href="{{ url_for('static',filename='css/bootstrap.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style_template.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/footer.css') }}">
+</head>
+
+<body>
+	<p>How do you say {{ phrase }} in Spanish?</p>
+
+	{% if next_question == 'howareyou' %}
+	<form method="post" action="/result/hello">
+		<input type="text" id="Answer" name="Answer" required="required">
+		<input type="submit" value="Submit" id="submit-button">
+	</form>
+	{% endif %}
+
+	{% if next_question == 'whatisyourname' %}
+	<form method="post" action="/result/howareyou">
+		<input type="text" id="Answer" name="Answer" required="required">
+		<input type="submit" value="Submit" id="submit-button">
+	</form>
+	{% endif %}
+
+	{% if next_question == 'end' %}
+	<form method="post" action="/result/whatisyourname">
+		<input type="text" id="Answer" name="Answer" required="required">
+		<input type="submit" value="Submit" id="submit-button">
+	</form>
+	{% endif %}
+</body>
+
+
+                                      <!--footer-->
+
+                                      <div class="footer">
+                                        <a href="https://www.instagram.com/#learnspanish" class="fa fa-instagram"></a>
+                                        <a href="https://www.pinterest.co.uk/search/pins/?rs=ac&len=2&q=learn%20spanish&eq=learn%20spanish&etslf=5089&term_meta" class="fa fa-pinterest"></a>
+
+                                        </form>
+                                      </div>
+
+</html>

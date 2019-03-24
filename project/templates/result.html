@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <link rel='stylesheet' href="{{ url_for('static',filename='css/bootstrap.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style_template.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/footer.css') }}">
+</head>
+
+<body>
+	{% if result == 'correct' %}
+	<p>Correct!</p>
+	{% elif result == 'incorrect' %}
+	<p>Incorrect! The answer is {{ answer }}.</p>
+	{% endif %}
+
+	{% if next_question == 'howareyou' %}
+	<form method="post" action="/howareyou">
+		<a href="/howareyou"><button type="button" class="btn btn-primary">Next question</button></a>
+	</form>
+	{% endif %}
+
+	{% if next_question == 'whatisyourname' %}
+	<form method="post" action="/whatisyourname">
+		<a href="/whatisyourname"><button type="button" class="btn btn-primary">Next question</button></a>
+	</form>
+	{% endif %}
+
+	{% if next_question == 'end' %}
+	<p>You reached the end of the quiz!</p>
+	<form method="post" action="/hello">
+		<a href="{{ url_for('sign_up') }}"><button type="button" class="btn btn-primary">Finsih!</button></a>
+	</form>
+	{% endif %}
+
+</body>
+
+
+                                      <!--footer-->
+
+                                      <div class="footer">
+                                        <a href="https://www.instagram.com/#learnspanish" class="fa fa-instagram"></a>
+                                        <a href="https://www.pinterest.co.uk/search/pins/?rs=ac&len=2&q=learn%20spanish&eq=learn%20spanish&etslf=5089&term_meta" class="fa fa-pinterest"></a>
+
+                                        </form>
+                                      </div>
+
+</html>
