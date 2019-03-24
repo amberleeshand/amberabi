@@ -2,12 +2,12 @@
 <html>
 <head>
   <title>About</title>
-  <link rel='stylesheet' href='C:\Users\Abi\OneDrive\Documents\CFG\level_2_course\project\static\css\bootstrap.css'>
+  <link rel='stylesheet' href="{{ url_for('static',filename='css/bootstrap.css') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="C:\Users\Abi\OneDrive\Documents\CFG\level_2_course\project\static\css\style_template.css">
-  <link rel="stylesheet" type="text/css" href="C:\Users\Abi\OneDrive\Documents\CFG\level_2_course\project\static\css\footer.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style_template.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/footer.css') }}">
 </head>
 
 <body>
@@ -17,12 +17,12 @@
   id="mySidebar">
   <button onclick="w3_close()" class="w3-bar-item w3-large">close &times;</button>
   <h3 class="w3-bar-item">menu</h3>
-  <a href="start.html" class="w3-bar-item w3-button">About</a>
-  <a href="lesson_1.html" class="w3-bar-item w3-button">Lesson 1</a>
-  <a href="lesson_2.html" class="w3-bar-item w3-button">Lesson 2</a>
-  <a href="lesson_3.html" class="w3-bar-item w3-button">Lesson 3</a>
-  <a href="lesson_4.html" class="w3-bar-item w3-button">Lesson 4</a>
-  <a href="sign_up.html" class="w3-bar-item w3-button">Sign Up</a>
+  <a href="{{ url_for('about') }}" class="w3-bar-item w3-button">About</a>
+  <a href="{{ url_for('lesson1') }}" class="w3-bar-item w3-button">Lesson 1</a>
+  <a href="{{ url_for('lesson2') }}" class="w3-bar-item w3-button">Lesson 2</a>
+  <a href="{{ url_for('lesson3') }}" class="w3-bar-item w3-button">Lesson 3</a>
+  <a href="{{ url_for('lesson4') }}" class="w3-bar-item w3-button">Lesson 4</a>
+  <a href="{{ url_for('sign_up') }}" class="w3-bar-item w3-button">Sign Up</a>
 </div>
 </div>
 
