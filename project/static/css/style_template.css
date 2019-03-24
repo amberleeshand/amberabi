@@ -2,19 +2,20 @@ h2 {
   text-align: center;
 }
 .header {
-  background-color: blue;
+  background-color: red;
   padding-bottom: 40px;
   color: white;
 }
 body {
-  background-color:green;
+  background-color:yellow;
 }
+
 .footer {
    position: ;
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #grey;
+   background-color: grey;
    color: white;
    text-align: center;
    padding-bottom: 20px;

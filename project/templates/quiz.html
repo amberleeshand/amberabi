@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Question</title>
+  <title>About</title>
   <link rel='stylesheet' href="{{ url_for('static',filename='css/bootstrap.css') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -11,30 +11,13 @@
 </head>
 
 <body>
-	<p>How do you say {{ phrase }} in Spanish?</p>
-
-	{% if next_question == 'howareyou' %}
-	<form method="post" action="/result/hello">
-		<input type="text" id="Answer" name="Answer" required="required">
-		<input type="submit" value="Submit" id="submit-button">
-	</form>
-	{% endif %}
-
-	{% if next_question == 'whatisyourname' %}
-	<form method="post" action="/result/howareyou">
-		<input type="text" id="Answer" name="Answer" required="required">
-		<input type="submit" value="Submit" id="submit-button">
-	</form>
-	{% endif %}
-
-	{% if next_question == 'end' %}
-	<form method="post" action="/result/whatisyourname">
-		<input type="text" id="Answer" name="Answer" required="required">
-		<input type="submit" value="Submit" id="submit-button">
-	</form>
-	{% endif %}
+	<div>
+		<h1>Spanish Quiz</h1>
+		<form method="post" action="/hello">
+			<a href="/hello"><button type="button" class="btn btn-primary">Start the quiz!</button></a>
+		</form>
+	</div>
 </body>
-
 
                                       <!--footer-->
 
@@ -44,5 +27,4 @@
 
                                         </form>
                                       </div>
-
 </html>

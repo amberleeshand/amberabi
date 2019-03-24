@@ -11,21 +11,13 @@ def index():
 def about():
     return render_template("about.html")
 
-@app.route("/lesson1")
-def lesson1():
-    return render_template("lesson1.html")
+@app.route("/lesson")
+def lesson():
+    return render_template("lesson.html")
 
-@app.route("/lesson2")
-def lesson2():
-    return render_template("lesson2.html")
-
-@app.route("/lesson3")
-def lesson3():
-    return render_template("lesson3.html")
-
-@app.route("/lesson4")
-def lesson4():
-    return render_template("lesson4.html")
+@app.route("/quiz")
+def quiz():
+    return render_template("quiz.html")
 
 @app.route("/sign_up")
 def sign_up():
@@ -37,9 +29,9 @@ def successful():
 
 # quiz python
 
-@app.route('/lesson1', methods=['GET', 'POST'])
+@app.route('/quiz', methods=['GET', 'POST'])
 def startthequiz():
-	return render_template('lesson1.html')
+	return render_template('quiz.html')
 
 @app.route('/<question>', methods=['GET', 'POST'])
 def question(question):
