@@ -18,12 +18,11 @@
   <button onclick="w3_close()" class="w3-bar-item w3-large">close &times;</button>
   <h3 class="w3-bar-item">Menu</h3>
   <a href="{{ url_for('about') }}" class="w3-bar-item w3-button">About</a>
-  <a href="{{ url_for('lesson') }}" class="w3-bar-item w3-button">Lesson</a>
+  <a href="{{ url_for('lesson') }}" class="w3-bar-item w3-button">Lessons</a>
   <a href="{{ url_for('quiz') }}" class="w3-bar-item w3-button">Quiz</a>
   <a href="{{ url_for('sign_up') }}" class="w3-bar-item w3-button">Sign Up</a>
   </div>
 </div>
-
 <!-- Page Content -->
 
 <div class = "w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
@@ -46,10 +45,11 @@
           <img class="card-img-top">
           <blockquote>
             <p><b>Lesson 1:</p></b>
-            <small class="lead"><u>
-              Meetings and Greetings <br></u>
+            <small>
+              <u><a href="{{ url_for('lesson') }}"class="lead">
+              Meetings and Greetings </a> <br></u>
               <br>
-              <p> Learn the basic greetings you'll need to introduce yourself and have your first conversation </p>
+              <p class="lead"> Learn the basic greetings you'll need to introduce yourself and have your first conversation </p>
              <br>
             </small>
           </blockquote>
@@ -61,10 +61,11 @@
               <img class="card-img-top" >
           <blockquote>
             <p><b>Lesson 2:</p></b>
-            <small class="lead"><u>
-              Let's Talk About You <br></u>
+            <small>
+              <u><a href="{{ url_for('lesson') }}"class="lead">
+              Let's Talk About You </a> <br></u>
              <br>
-             <p> Explore subject pronouns, professions and using "ser" for descriptions and origins. </p>
+             <p class="lead"> Explore subject pronouns, professions and using "ser" for descriptions and origins. </p>
             </small>
             <br>
             <br>
@@ -77,11 +78,12 @@
               <blockquote>
                 <br>
             <p><b>Lesson 3:</p></b>
-            <small class="lead"><u>
-              At the Restaurant</u>
+            <small>
+              <u><a href="{{ url_for('lesson') }}"class="lead">
+              At the Restaurant </a> <br></u>
+
             <br>
-            <br>
-            <p> Learn words and phrases to have a conversation in a restaurant and names of food </p>
+            <p class="lead"> Learn words and phrases to have a conversation in a restaurant and names of food </p>
             </small>
             <br>
             <br>
@@ -95,11 +97,12 @@
                                       <blockquote>
                                         <br>
                                     <p><b>Lesson 4:</p></b>
-                                    <small class="lead"><u>
-                                      Likes and Dislikes </u>
+                                    <small>
+                                      <u><a href="{{ url_for('lesson') }}"class="lead">
+                                      Likes and Dislikes </a> <br></u>
+
                                       <br>
-                                      <br>
-                                      <p> Discuss what you like to do on the weekends and hobbies. </p>
+                                      <p class="lead"> Discuss what you like to do on the weekends and hobbies. </p>
                                     </small>
                                     <br>
                                     <br>
@@ -113,15 +116,15 @@
 
 
                           <div id='growing your own'>
-                            <h2><small>About the Team</small></h2>
+                            <h2><small>The Women Behind the App</small></h2>
                             <div class='row'>
                               <div class='col-sm-12'>
   <div class="w3-card">
                                       <img class="card-img-top" src="https://media.mnn.com/assets/images/2016/05/Two-Women-Laughing-At-Computer.jpg.653x0_q80_crop-smart.jpg" alt="best friends">
                                   <blockquote>
                                     <br>
-                                    <p>Abi & Amber</p>
-                                    <small>
+                                    <p class="lead"><b>Abi & Amber</b></p>
+                                    <small class="lead">
                                       Two Streatham girls looking to make a difference in the world. <br>
                                       <br>
                                       We both have decided we wanted to learn Spanish, so why not take you on our journey with us! <br>
