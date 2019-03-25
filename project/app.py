@@ -98,9 +98,9 @@ quiz = {
     "goshopping":["to go shopping","ir de compras","toeat"],
     "toeat":["to go out to eat","ir a comer","todance"],
     "todance":["to go dancing","ir a bailar","toworkout"],
-    "toworkout":["to workout","hacer ejercicio","end"],
-
+    "toworkout":["to workout","hacer ejercicio","end"]
 }
+
 
 
 app.run(debug = True)
