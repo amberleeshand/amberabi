@@ -63,11 +63,44 @@ def result(question):
 # The value of the dictionary is an array:
 # The first element of the array is the phrase, the second the answer, and the third is the next question so the page loops round
 quiz = {
-	"hello":["hello","hola","howareyou"],
 	"howareyou":["how are you", "como estas","whatisyourname"],
-	"whatisyourname":["what is your name","como te llamas","end"]
-}
+	"whatisyourname":["what is your name","como te llamas","mynameis"],
+    "mynameis":["my name is","me llamo","nicetomeetyou"],
+    "nicetomeetyou":["nice to meet you","mucho gusto","thankyou"],
+    "thankyou":["thank you","gracias","seeyoulater"],
+    "seeyoulater":["see you later","hasta luego","goodbye"],
+    "goodbye":["goodbye","adios","whereareyoufrom"],
+    "whereareyoufrom":["where are you from","de donde eres","fromengland"],
+    "fromengland":["i am from england","soy de inglaterra","teacher"],
+    "teacher":["teacher","el maestro","student"],
+    "student":["student","el estudiante","lawyer"],
+    "lawyer":["lawyer","el abogado","doctor"],
+    "doctor":["doctor","el doctor","married"],
+    "married":["married","casado","sheismarried"],
+    "sheismarried":["she is married","ella es casada","housewife"],
+    "housewife":["housewife","el ama de casa","unitedstates"],
+    "unitedstates":["united states","los estados unidos","goodlooking"],
+    "goodlooking":["good looking","guapo","goodnight"],
+    "goodnight":["good night","buenas noches","please"],
+    "please":["please","por favor","salad"],
+    "salad":["salad","la ensalada","food"],
+    "food":["food","la comida","chicken"],
+    "chicken":["chicken","el pollo","desert"],
+    "desert":["desert","el postre","waiter"],
+    "waiter":["waiter","el mesero","goodmorning"],
+    "goodmorning":["good morning","buenos dias","goodafternoon"],
+    "goodafternoon":["good afternoon","buenos tardes","weekend"],
+    "weekend":["the weekend","el fin de semana","goingbeach"],
+    "goingbeach":["i am going to the beach","voy a la playa","toread"],
+    "toread":["to read","leer","tocook"],
+    "tocook":["to cook","cocinar","gomovies"],
+    "gomovies":["to go to the movies","ir al cine","goshopping"],
+    "goshopping":["to go shopping","ir de compras","toeat"],
+    "toeat":["to go out to eat","ir a comer","todance"],
+    "todance":["to go dancing","ir a bailar","toworkout"],
+    "toworkout":["to workout","hacer ejercicio","end"],
 
+}
 
 
 app.run(debug = True)
