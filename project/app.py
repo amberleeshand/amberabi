@@ -63,6 +63,7 @@ def result(question):
 # The value of the dictionary is an array:
 # The first element of the array is the phrase, the second the answer, and the third is the next question so the page loops round
 quiz = {
+    "hello":["hello", "hola","howareyou"],
 	"howareyou":["how are you", "como estas","whatisyourname"],
 	"whatisyourname":["what is your name","como te llamas","mynameis"],
     "mynameis":["my name is","me llamo","nicetomeetyou"],

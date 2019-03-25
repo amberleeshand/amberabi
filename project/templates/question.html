@@ -27,6 +27,55 @@
 	</form>
 	{% endif %}
 
+  {% if next_question == 'mynameis' %}
+	<form method="post" action="/result/whatisyourname">
+		<input type="text" id="Answer" name="Answer" required="required">
+		<input type="submit" value="Submit" id="submit-button">
+	</form>
+	{% endif %}
+
+  {% if next_question == 'nicetomeetyou' %}
+	<form method="post" action="/result/mynameis">
+		<input type="text" id="Answer" name="Answer" required="required">
+		<input type="submit" value="Submit" id="submit-button">
+	</form>
+	{% endif %}
+
+  {% if next_question == 'thankyou' %}
+	<form method="post" action="/result/nicetomeetyou">
+		<input type="text" id="Answer" name="Answer" required="required">
+		<input type="submit" value="Submit" id="submit-button">
+	</form>
+	{% endif %}
+
+  {% if next_question == 'seeyoulater' %}
+	<form method="post" action="/result/thankyou">
+		<input type="text" id="Answer" name="Answer" required="required">
+		<input type="submit" value="Submit" id="submit-button">
+	</form>
+	{% endif %}
+
+  {% if next_question == 'goodbye' %}
+	<form method="post" action="/result/seeyoulater">
+		<input type="text" id="Answer" name="Answer" required="required">
+		<input type="submit" value="Submit" id="submit-button">
+	</form>
+	{% endif %}
+
+  {% if next_question == 'whereareyoufrom' %}
+	<form method="post" action="/result/goodbye">
+		<input type="text" id="Answer" name="Answer" required="required">
+		<input type="submit" value="Submit" id="submit-button">
+	</form>
+	{% endif %}
+
+  {% if next_question == 'fromengland' %}
+	<form method="post" action="/result/whereareyoufrom">
+		<input type="text" id="Answer" name="Answer" required="required">
+		<input type="submit" value="Submit" id="submit-button">
+	</form>
+	{% endif %}
+
 	{% if next_question == 'end' %}
 	<form method="post" action="/result/whatisyourname">
 		<input type="text" id="Answer" name="Answer" required="required">

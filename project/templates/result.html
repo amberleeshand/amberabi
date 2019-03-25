@@ -17,6 +17,12 @@
 	<p>Incorrect! The answer is {{ answer }}.</p>
 	{% endif %}
 
+  {% if next_question == 'hello' %}
+	<form method="post" action="/hello">
+		<a href="/hello"><button type="button" class="btn btn-primary">Next question</button></a>
+	</form>
+	{% endif %}
+
 	{% if next_question == 'howareyou' %}
 	<form method="post" action="/howareyou">
 		<a href="/howareyou"><button type="button" class="btn btn-primary">Next question</button></a>
@@ -29,10 +35,56 @@
 	</form>
 	{% endif %}
 
+  {% if next_question == 'mynameis' %}
+	<form method="post" action="/mynameis">
+		<a href="/mynameis"><button type="button" class="btn btn-primary">Next question</button></a>
+	</form>
+	{% endif %}
+
+  {% if next_question == 'nicetomeetyou' %}
+	<form method="post" action="/nicetomeetyou">
+		<a href="/nicetomeetyou"><button type="button" class="btn btn-primary">Next question</button></a>
+	</form>
+	{% endif %}
+
+  {% if next_question == 'thankyou' %}
+	<form method="post" action="/thankyou">
+		<a href="/thankyou"><button type="button" class="btn btn-primary">Next question</button></a>
+	</form>
+	{% endif %}
+
+
+  {% if next_question == 'seeyoulater' %}
+	<form method="post" action="/seeyoulater">
+		<a href="/seeyoulater"><button type="button" class="btn btn-primary">Next question</button></a>
+	</form>
+	{% endif %}
+
+  {% if next_question == 'goodbye' %}
+	<form method="post" action="/goodbye">
+		<a href="/goodbye"><button type="button" class="btn btn-primary">Next question</button></a>
+	</form>
+	{% endif %}
+
+  {% if next_question == 'whereareyoufrom' %}
+	<form method="post" action="/whereareyoufrom">
+		<a href="/whereareyoufrom"><button type="button" class="btn btn-primary">Next question</button></a>
+	</form>
+	{% endif %}
+
+
+  {% if next_question == 'fromengland' %}
+	<form method="post" action="/fromengland">
+		<a href="/fromengland"><button type="button" class="btn btn-primary">Next question</button></a>
+	</form>
+	{% endif %}
+
+
+
 	{% if next_question == 'end' %}
 	<p>You reached the end of the quiz!</p>
 	<form method="post" action="/hello">
-		<a href="{{ url_for('sign_up') }}"><button type="button" class="btn btn-primary">Finsih!</button></a>
+		<a href="{{ url_for('sign_up') }}"><button type="button" class="btn btn-primary">Finish!</button></a>
 	</form>
 	{% endif %}
 
